@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #8B7355;
+  --secondary: #D4C1A6;
+  --accent: #E8D5B5;
+  --light: #F8F4ED;
+  --dark: #3E3A33;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
