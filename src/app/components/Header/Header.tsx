@@ -6,7 +6,7 @@ export function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-serif font-bold text-primary">
-          Waliin  Farm
+          Waliin Cattle Fattening Farm
         </Link>
         <Navigation />
       </div>

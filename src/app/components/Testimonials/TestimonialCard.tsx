@@ -11,14 +11,6 @@ export function TestimonialCard({ name, role, content, avatar }: TestimonialCard
   return (
     <div className="bg-white p-6 rounded-xl shadow-md h-full">
       <div className="flex items-center mb-4">
-        <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
-          <Image 
-            src={avatar} 
-            alt={`${name}'s avatar`}
-            fill
-            className="object-cover"
-          />
-        </div>
         <div>
           <h3 className="font-bold text-lg text-dark">{name}</h3>
           <p className="text-primary text-sm">{role}</p>

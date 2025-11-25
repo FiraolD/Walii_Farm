@@ -8,11 +8,6 @@ const features = [
     description: "Historic 19th-century farmhouse with original wood beams and stone fireplace"
   },
   {
-    icon: <GiFarmTractor size={40} />,
-    title: "Working Farm",
-    description: "Experience farm life with seasonal activities and fresh produce"
-  },
-  {
     icon: <GiTreehouse size={40} />,
     title: "Modern Amenities",
     description: "Fully equipped kitchen, high-speed WiFi, and luxury bedding"

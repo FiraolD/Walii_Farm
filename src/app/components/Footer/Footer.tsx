@@ -22,7 +22,7 @@ export function Footer() {
                 </h3>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-                Experience authentic farm living with modern comfort. Where rustic charm meets sustainable luxury.
+                Invest in a venture that nourishes communities, empowers farmers, and shapes the future of Ethiopia’s livestock economy.
               </p>
               
               {/* Social Links */}

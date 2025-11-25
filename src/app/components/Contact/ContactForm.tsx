@@ -37,7 +37,7 @@ export function ContactForm() {
           Get In Touch
         </h2>
         <p className="text-center mb-16 text-accent max-w-2xl mx-auto">
-          Have questions about your stay? Reach out to us!
+          Have questions about our products? Reach out to us!
         </p>
 
         <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8">
@@ -60,7 +60,7 @@ export function ContactForm() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-light placeholder:text-light/70"
-                    placeholder="Your name"
+                    placeholder="John Doe"
                   />
                 </div>
                 <div>
@@ -73,7 +73,7 @@ export function ContactForm() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-light placeholder:text-light/70"
-                    placeholder="your.email@example.com"
+                    placeholder="johndoe@gmail.com"
                   />
                 </div>
               </div>
@@ -88,7 +88,7 @@ export function ContactForm() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-light placeholder:text-light/70"
-                  placeholder="Booking inquiry, general question, etc."
+                  placeholder="Business inquiry, general question, etc."
                 />
               </div>
               

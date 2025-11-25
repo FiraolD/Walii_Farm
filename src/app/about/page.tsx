@@ -5,7 +5,7 @@ export default function AboutPage() {
       <div className="relative h-64 md:h-96">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent z-10"></div>
         <div className="absolute inset-0 bg-cover bg-center" 
-             style={{ backgroundImage: "url('/images/farm-aerial.jpg')" }}></div>
+            style={{ backgroundImage: "url('/images/farm-aerial.jpg')" }}></div>
         <div className="container relative z-20 h-full flex items-center">
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-white">
             Our Story
@@ -20,8 +20,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-dark/80 mb-4">
-                Waliin Farm has been a cornerstone of sustainable cattle farming since 2014. 
-                Founded by Delesa Gebisa, our farm began with 200 acres and a simple vision: 
+                Waliin Farm has been a cornerstone of sustainable cattle farming since 2024. 
+                Founded by Delesa Gebisa and friends, our farm began with 300 care meter and a simple vision: 
                 to raise healthy, ethically-treated cattle while preserving the land for future generations.
               </p>
               <p className="text-lg text-dark/80">
@@ -31,7 +31,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-gray-100 rounded-xl h-64" 
-                 style={{ backgroundImage: "url('/images/farm-family.jpg')", backgroundSize: 'cover' }}></div>
+                style={{ backgroundImage: "url('/images/farm-family.jpg')", backgroundSize: 'cover' }}></div>
           </div>
         </section>
 
@@ -72,8 +72,8 @@ export default function AboutPage() {
             {[
               {
                 name: "Delesa Gebisa",
-                role: "Head Operations",
-                bio: "30+ years experience in sustainable cattle management. Graduate of [University] Agricultural Program.",
+                role: "Operations Manager",
+                bio: "Oversees daily farm operations and coordinates with local distributors.",
                 img: "/images/avatar.png"
               },
               {
@@ -83,15 +83,15 @@ export default function AboutPage() {
                 img: "/images/avatar.png"
               },
               {
-                name: "Firaol Delesa",
-                role: "Operations Manager",
-                bio: "Oversees daily farm operations and coordinates with local distributors.",
+                name: "Lebeta Ararsa",
+                role: "Finance Manager",
+                bio: "Oversees campanies financial operations and transactions..",
                 img: "/images/avatar.png"
               }
             ].map((member, i) => (
               <div key={i} className="text-center">
                 <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200"
-                     style={{ backgroundImage: `url('${member.img}')`, backgroundSize: 'cover' }}></div>
+                    style={{ backgroundImage: `url('${member.img}')`, backgroundSize: 'cover' }}></div>
                 <h3 className="text-xl font-bold text-dark">{member.name}</h3>
                 <p className="text-primary font-medium mb-2">{member.role}</p>
                 <p className="text-dark/70">{member.bio}</p>
