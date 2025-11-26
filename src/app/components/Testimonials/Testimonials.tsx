@@ -6,34 +6,31 @@ const testimonials: Testimonial[] = [
   // ...
 ];
 
-// src/app/components/Testimonials/Testimonials.tsx
-interface Testimonial {
-  id: number;
+// TestimonialCard.tsx (excerpt)
+
+interface TestimonialCardProps {
   name: string;
   role: string;
   content: string;
-  avatar?: string; // optional if not always present
+  avatar?: string; // <-- make optional
 }
 
-export function Testimonials() {
+export default function TestimonialCard({
+  name,
+  role,
+  content,
+  avatar,
+}: TestimonialCardProps) {
+  const avatarSrc = avatar ?? "/images/default-avatar.jpg"; // path to fallback image
+
   return (
-    <section className="py-20 bg-secondary/20">
-      <div className="container">
-        <h2 className="text-4xl font-serif font-bold text-center mb-16 text-dark">
-          Guest Experiences
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial: Testimonial) => (
-  <TestimonialCard
-    key={testimonial.id}
-    name={testimonial.name}
-    role={testimonial.role}
-    content={testimonial.content}
-    avatar={testimonial.avatar}
-  />
-))}
-        </div>
-      </div>
-    </section>
+    <article className="...">
+      {/* If using next/image */}
+      {/* <Image src={avatarSrc} alt={`${name} avatar`} width={48} height={48} /> */}
+      <img src={avatarSrc} alt={`${name} avatar`} className="w-12 h-12 rounded-full" />
+      <h3>{name}</h3>
+      <p>{role}</p>
+      <blockquote>{content}</blockquote>
+    </article>
   );
 }
